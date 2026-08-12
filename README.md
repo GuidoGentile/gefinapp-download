@@ -15,8 +15,10 @@ personale è incluso nel download.
 ## Stato del progetto
 
 GefinApp è una beta sperimentale per Windows x64. Il pacchetto non è ancora firmato digitalmente.
-Il codice sorgente applicativo è mantenuto in un repository privato; questo repository distribuisce
-il pacchetto eseguibile, le istruzioni e le note di versione.
+Il repository di sviluppo, la sua cronologia e gli strumenti interni restano privati; questo repository
+distribuisce il pacchetto portabile, le istruzioni e le note di versione. Poiché GefinApp è una webapp
+JavaScript locale, i file applicativi presenti nello ZIP sono leggibili e non vengono presentati come
+codice offuscato.
 
 ## Avvertenza
 
