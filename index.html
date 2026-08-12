@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="GefinApp: analisi finanziaria locale, dati pubblici, SQLite e modelli previsionali trasparenti.">
+  <title>GefinApp · Analisi finanziaria locale</title>
+  <link rel="icon" href="assets/gefinapp-logo.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#inizio" aria-label="GefinApp">
+      <img src="assets/gefinapp-logo.png" alt="">
+      <span>GefinApp</span>
+    </a>
+    <nav aria-label="Navigazione principale">
+      <a href="#funzioni">Funzioni</a>
+      <a href="#privacy">Dati locali</a>
+      <a href="#installazione">Installazione</a>
+    </nav>
+  </header>
+
+  <main id="inizio">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Beta Windows · local-first</p>
+        <h1>I mercati sul tuo computer.<br><span>I dati sotto il tuo controllo.</span></h1>
+        <p class="lead">GefinApp raccoglie dati finanziari pubblici, li organizza in SQLite e rende
+          leggibili analisi, sentiment e modelli previsionali. L’applicazione gira in locale e apre
+          l’interfaccia nel browser, senza inviare il tuo portafoglio a un server GefinApp.</p>
+        <div class="actions">
+          <a class="button primary" href="https://github.com/GuidoGentile/gefinapp-download/releases/latest">Scarica per Windows</a>
+          <a class="button secondary" href="https://github.com/GuidoGentile/gefinapp-download/releases">Note di versione</a>
+        </div>
+        <p class="micro">Pacchetto portabile x64 · runtime incluso · nessuna installazione di Node.js</p>
+      </div>
+      <div class="signal" aria-label="Rappresentazione stilizzata di serie finanziarie">
+        <div class="signal-head"><span>STORICO</span><span>ROLLING 1m</span></div>
+        <svg viewBox="0 0 620 330" role="img" aria-label="Grafico stilizzato con previsione mensile">
+          <defs>
+            <linearGradient id="fill" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#91f6be" stop-opacity=".34"/>
+              <stop offset="1" stop-color="#91f6be" stop-opacity="0"/>
+            </linearGradient>
+          </defs>
+          <g class="grid"><path d="M30 55H590M30 125H590M30 195H590M30 265H590"/><path d="M110 30V290M210 30V290M310 30V290M410 30V290M510 30V290"/></g>
+          <path class="area" d="M30 247L75 230L120 238L165 192L210 206L255 149L300 167L345 117L390 137L435 85L480 105L520 71L520 290H30Z"/>
+          <path class="history" d="M30 247L75 230L120 238L165 192L210 206L255 149L300 167L345 117L390 137L435 85L480 105L520 71"/>
+          <path class="forecast" d="M520 71L590 48"/><path class="band" d="M520 71L590 24L590 86Z"/>
+          <circle cx="520" cy="71" r="6"/><circle class="future" cx="590" cy="48" r="7"/>
+        </svg>
+        <div class="signal-foot"><span>Prezzi e fondamentali</span><strong>SQLite locale</strong></div>
+      </div>
+    </section>
+
+    <section id="funzioni" class="section">
+      <p class="eyebrow">Un solo ambiente di lavoro</p>
+      <h2>Dalla fotografia del mercato all’analisi del titolo</h2>
+      <div class="features">
+        <article><span>01</span><h3>Mercati e titoli</h3><p>Un universo organizzato per area, tipologia e classificazione settoriale, con storico giornaliero e fondamentali.</p></article>
+        <article><span>02</span><h3>Analisi multiday</h3><p>Grafici, bilanci, indicatori, liquidità e confronti su finestre coerenti con un orizzonte operativo mensile.</p></article>
+        <article><span>03</span><h3>Previsioni verificabili</h3><p>Modelli confrontati walk-forward, metriche standard e documentazione matematica integrata nell’app.</p></article>
+        <article><span>04</span><h3>Sentiment ed eventi</h3><p>Serie numeriche derivate da fonti pubbliche per leggere contesto globale, geografico e settoriale.</p></article>
+      </div>
+    </section>
+
+    <section id="privacy" class="local-section">
+      <div>
+        <p class="eyebrow">Architettura local-first</p>
+        <h2>Il database nasce sul tuo PC.</h2>
+      </div>
+      <div class="local-grid">
+        <p><strong>Nessun database personale nel download.</strong> Al primo avvio GefinApp crea un nuovo file SQLite nella propria cartella.</p>
+        <p><strong>Nessun account GefinApp.</strong> Portafoglio, simulazioni e preferenze restano nell’installazione locale.</p>
+        <p><strong>Integrazioni facoltative.</strong> L’app funziona con fonti pubbliche; Fineco XCell è opzionale e non serve per iniziare.</p>
+      </div>
+    </section>
+
+    <section id="installazione" class="section install">
+      <p class="eyebrow">Tre passaggi</p>
+      <h2>Scarica, estrai, avvia.</h2>
+      <ol>
+        <li><span>1</span><div><strong>Scarica lo ZIP</strong><p>Apri la Release più recente e scegli il pacchetto Windows x64.</p></div></li>
+        <li><span>2</span><div><strong>Estrai la cartella</strong><p>Non avviare il file direttamente dall’archivio compresso.</p></div></li>
+        <li><span>3</span><div><strong>Apri “Avvia GefinApp.cmd”</strong><p>Il server locale parte in background e l’app si apre nel browser predefinito.</p></div></li>
+      </ol>
+      <div class="beta-note"><strong>Prima beta non firmata.</strong> Windows può mostrare un avviso per un file appena scaricato. Verifica che il download provenga da questa pagina e confronta, se vuoi, il codice SHA-256 pubblicato nella Release.</div>
+    </section>
+  </main>
+
+  <footer>
+    <span>GefinApp · beta sperimentale</span>
+    <p>Strumento informativo e di ricerca: non costituisce consulenza finanziaria né garanzia di rendimento. Dati e previsioni possono essere incompleti, differiti o errati.</p>
+  </footer>
+</body>
+</html>
