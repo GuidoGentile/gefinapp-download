@@ -1,0 +1,23 @@
+.signal-foot {
+  align-items: flex-end;
+  gap: 18px;
+  font-size: 11px;
+}
+
+.signal-foot span {
+  line-height: 1.45;
+}
+
+.signal-foot strong {
+  flex: 0 0 auto;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+@media (max-width: 560px) {
+  .signal-foot {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 5px;
+  }
+}
