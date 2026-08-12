@@ -1,6 +1,15 @@
-# GefinApp 0.1.0 beta
+# GefinApp 0.1.1 beta
 
-Prima distribuzione pubblica Windows x64.
+Aggiornamento della beta Windows x64.
+
+## Novità 0.1.1
+
+- Sincronizzazione automatica in background dell'intero universo visibile.
+- Dieci anni di prezzi OHLCV e azioni societarie al primo caricamento.
+- Aggiornamenti successivi limitati agli ultimi tre mesi.
+- Coda controllata con due richieste concorrenti, retry e isolamento degli errori per simbolo.
+- Nuovo ciclo ogni sei ore mentre GefinApp è aperta.
+- Stato dettagliato disponibile in `/api/system/sync` e avvio manuale tramite `POST`.
 
 ## Contenuto
 
